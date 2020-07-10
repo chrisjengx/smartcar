@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<robot name="smartcar" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="smartcar" 
+    xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:property name="M_PI" value="3.14159" />
 
     <xacro:include filename="$(find smartcar_description)/urdf/gazebo.urdf.xacro" />
@@ -121,7 +122,7 @@
             <limit effort="100" velocity="100" />
             <joint_properties damping="0.0" friction="0.0" />
         </joint>
-        
+
         <link name="right_back_wheel">
             <inertial>
                 <origin xyz="-0.08 -0.08 0.025" />
@@ -143,7 +144,7 @@
                 </geometry>
             </collision>
         </link>
-        
+
         <joint name="right_back_wheel_joint" type="continuous">
             <axis xyz="0 0 1" />
             <parent link="base_link" />
@@ -152,7 +153,7 @@
             <limit effort="100" velocity="100" />
             <joint_properties damping="0.0" friction="0.0" />
         </joint>
-        
+
         <link name="head">
             <inertial>
                 <origin xyz="0.08 0 0.08"/>
