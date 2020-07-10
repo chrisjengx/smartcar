@@ -17,13 +17,13 @@
                 <geometry>
                     <box size="0.25 0.16 0.05" />
                 </geometry>
-                <origin rpy="0 0 0" xyz="0 0 0.055" />
+                <origin xyz="0 0 0.055" />
                 <material name="blue">
                     <color rgba="0 0 0.8 1" />
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 0 0" xyz="0 0 0.055" />
+                <origin xyz="0 0 0.055" />
                 <geometry>
                     <box size="0.25 0.16 0.05" />
                 </geometry>
@@ -34,18 +34,17 @@
             <inertial>
                 <origin xyz="0.08 0.08 0.025" />
                 <mass value="0.1" />
-                <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="0.0" />
+                <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
             </inertial>
             <visual>
                 <geometry>
                     <cylinder length="0.02" radius="0.025" />
                 </geometry>
                 <material name="black">
-                    <color rgba=="0 0 0 1" />
+                    <color rgba="0 0 0 1" />
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 1.57075 1.57075" xyz="0.08 0.08 0.025" />
                 <geometry>
                     <cylinder length="0.02" radius="0.025" />
                 </geometry>
@@ -76,7 +75,6 @@
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 1.57075 1.57075" xyz="0.08 -0.08 0.025" />
                 <geometry>
                     <cylinder length="0.02" radius="0.025" />
                 </geometry>
@@ -118,7 +116,7 @@
             <axis xyz="0 0 1" />
             <parent link="base_link" />
             <child link="left_back_wheel" />
-            <origin rpy="0 1.57075 1.57075" xyz="-0.08 0.08 0.25" />
+            <origin rpy="0 1.57075 1.57075" xyz="-0.08 0.08 0.025" />
             <limit effort="100" velocity="100" />
             <joint_properties damping="0.0" friction="0.0" />
         </joint>
@@ -138,7 +136,6 @@
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 1.57075 1.57075" xyz="-0.08 -0.08 0.025" />
                 <geometry>
                     <cylinder length="0.02" radius="0.025" />
                 </geometry>
@@ -169,7 +166,6 @@
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 0 0 " xyz="0.08 0 0.08" />
                 <geometry>
                     <box size="0.02 0.03 0.03" />
                 </geometry>
@@ -179,7 +175,7 @@
         <joint name="tobox" type="fixed">
             <parent link="base_link" />
             <child link="head" />
-            <origin rpy="0 0 0" xyz="0.08 0.08 0.08" />
+            <origin rpy="0 0 0" xyz="0.08 0 0.08" />
         </joint>
     </xacro:macro>
 
