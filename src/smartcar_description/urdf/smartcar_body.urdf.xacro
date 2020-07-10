@@ -105,7 +105,6 @@
                 </material>
             </visual>
             <collision>
-                <origin rpy="0 1.57075 1.57075" xyz="-0.08 0.08 0.25" />
                 <geometry>
                     <cylinder length="0.02" radius="0.025" />
                 </geometry>
