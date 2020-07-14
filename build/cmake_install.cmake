@@ -131,6 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ros/smartcar/build/gtest/cmake_install.cmake")
+  include("/home/ros/smartcar/build/smartcar_teleop/cmake_install.cmake")
+  include("/home/ros/smartcar/build/smartcar_description/cmake_install.cmake")
 
 endif()
 

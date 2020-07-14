@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ros/smartcar/devel:$CMAKE_PREFIX_PATH"
+export PKG_CONFIG_PATH="/home/ros/smartcar/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/ros/smartcar/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ros/smartcar/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/ros/smartcar/src:$ROS_PACKAGE_PATH"
