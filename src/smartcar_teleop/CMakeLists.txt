@@ -139,7 +139,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/smartcar_teleop_node.cpp)
-add_executable(smartcar_keboard_teleop src/keyboard.cpp)
+add_executable(smartcar_keyboard_teleop src/keyboard.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -155,8 +155,8 @@ add_executable(smartcar_keboard_teleop src/keyboard.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(smartcar_keboard_teleop
-  boost_thread
+target_link_libraries(smartcar_keyboard_teleop
+  ${Boost_LIBRARIES}
 )
 
 #############
