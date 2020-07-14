@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/ros/smartcar/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ee650/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ee650.dir/build.make CMakeFiles/cmTC_ee650.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_17eb8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17eb8.dir/build.make CMakeFiles/cmTC_17eb8.dir/build
 make[1]: Entering directory '/home/ros/smartcar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ee650.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ee650.dir/CheckSymbolExists.c.o   -c /home/ros/smartcar/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ee650
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee650.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ee650.dir/CheckSymbolExists.c.o  -o cmTC_ee650 
-CMakeFiles/cmTC_ee650.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_17eb8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_17eb8.dir/CheckSymbolExists.c.o   -c /home/ros/smartcar/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_17eb8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17eb8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_17eb8.dir/CheckSymbolExists.c.o  -o cmTC_17eb8 
+CMakeFiles/cmTC_17eb8.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ee650.dir/build.make:97: recipe for target 'cmTC_ee650' failed
-make[1]: *** [cmTC_ee650] Error 1
+CMakeFiles/cmTC_17eb8.dir/build.make:97: recipe for target 'cmTC_17eb8' failed
+make[1]: *** [cmTC_17eb8] Error 1
 make[1]: Leaving directory '/home/ros/smartcar/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ee650/fast' failed
-make: *** [cmTC_ee650/fast] Error 2
+Makefile:126: recipe for target 'cmTC_17eb8/fast' failed
+make: *** [cmTC_17eb8/fast] Error 2
 
 File /home/ros/smartcar/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/ros/smartcar/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_647be/fast"
-/usr/bin/make -f CMakeFiles/cmTC_647be.dir/build.make CMakeFiles/cmTC_647be.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fa134/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa134.dir/build.make CMakeFiles/cmTC_fa134.dir/build
 make[1]: Entering directory '/home/ros/smartcar/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_647be.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_647be.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_647be
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_647be.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_647be.dir/CheckFunctionExists.c.o  -o cmTC_647be -lpthreads 
+Building C object CMakeFiles/cmTC_fa134.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fa134.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa134
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa134.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fa134.dir/CheckFunctionExists.c.o  -o cmTC_fa134 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_647be.dir/build.make:97: recipe for target 'cmTC_647be' failed
-make[1]: *** [cmTC_647be] Error 1
+CMakeFiles/cmTC_fa134.dir/build.make:97: recipe for target 'cmTC_fa134' failed
+make[1]: *** [cmTC_fa134] Error 1
 make[1]: Leaving directory '/home/ros/smartcar/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_647be/fast' failed
-make: *** [cmTC_647be/fast] Error 2
+Makefile:126: recipe for target 'cmTC_fa134/fast' failed
+make: *** [cmTC_fa134/fast] Error 2
 
 

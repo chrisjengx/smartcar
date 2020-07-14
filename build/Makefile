@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named smartcar_keyboard_teleop
+
+# Build rule for target.
+smartcar_keyboard_teleop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smartcar_keyboard_teleop
+.PHONY : smartcar_keyboard_teleop
+
+# fast build rule for target.
+smartcar_keyboard_teleop/fast:
+	$(MAKE) -f smartcar_teleop/CMakeFiles/smartcar_keyboard_teleop.dir/build.make smartcar_teleop/CMakeFiles/smartcar_keyboard_teleop.dir/build
+.PHONY : smartcar_keyboard_teleop/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -566,6 +579,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... smartcar_keyboard_teleop"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"

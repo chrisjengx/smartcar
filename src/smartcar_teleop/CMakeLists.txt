@@ -156,6 +156,7 @@ add_executable(smartcar_keyboard_teleop src/keyboard.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(smartcar_keyboard_teleop
+  ${catkin_LIBRARIES}
   ${Boost_LIBRARIES}
 )
 
