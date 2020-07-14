@@ -1,0 +1,6 @@
+<launch>
+    <arg name="cmd_topic" default="cmd_vel" />
+    <node name="smartcar_teleop" pkg="smartcar_teleop" type="teleop.py">
+        <remap from="cmd_vel" to "$(arg cmd_topic)" />
+    </node>
+</launch>
