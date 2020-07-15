@@ -49,7 +49,7 @@
 #define KEYCODE_S_CAP 0x53
 #define KEYCODE_W_CAP 0x57
 
-class ErraticKeyboardTeleopNode
+class SmartcarKeyboardTeleopNode
 {
     private:
         double walk_vel_;
@@ -62,7 +62,7 @@ class ErraticKeyboardTeleopNode
         ros::Publisher pub_;
 
     public:
-        ErraticKeyboardTeleopNode()
+        SmartcarKeyboardTeleopNode()
         {
             pub_ = n_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
             
@@ -73,7 +73,7 @@ class ErraticKeyboardTeleopNode
             n_private.param("yaw_rate_run", yaw_rate_run_, 1.5);
         }
         
-        ~ErraticKeyboardTeleopNode() { }
+        ~SmartcarKeyboardTeleopNode() { }
         void keyboardLoop();
         
         void stopRobot()
@@ -84,7 +84,7 @@ class ErraticKeyboardTeleopNode
         }
 };
 
-ErraticKeyboardTeleopNode* tbk;
+SmartcarKeyboardTeleopNode* tbk;
 int kfd = 0;
 struct termios cooked, raw;
 bool done;
@@ -92,9 +92,9 @@ bool done;
 int main(int argc, char** argv)
 {
     ros::init(argc,argv,"tbk", ros::init_options::AnonymousName | ros::init_options::NoSigintHandler);
-    ErraticKeyboardTeleopNode tbk;
+    SmartcarKeyboardTeleopNode tbk;
     
-    boost::thread t = boost::thread(boost::bind(&ErraticKeyboardTeleopNode::keyboardLoop, &tbk));
+    boost::thread t = boost::thread(boost::bind(&SmartcarKeyboardTeleopNode::keyboardLoop, &tbk));
     
     ros::spin();
     
@@ -106,7 +106,7 @@ int main(int argc, char** argv)
     return(0);
 }
 
-void ErraticKeyboardTeleopNode::keyboardLoop()
+void SmartcarKeyboardTeleopNode::keyboardLoop()
 {
     char c;
     double max_tv = walk_vel_;
