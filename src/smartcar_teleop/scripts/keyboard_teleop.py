@@ -34,7 +34,7 @@ def keyboardLoop():
     print "Press q to quit"
 
     #keypress
-    while not rospy.is_shutdowm():
+    while not rospy.is_shutdown():
         fd = sys.stdin.fileno()
         old_settings =  termios.tcgetattr(fd)
         #cancle echo
@@ -94,13 +94,13 @@ def keyboardLoop():
         #stop
         stop_robot()
 
-    def stop_robot():
-        cmd.linear.x = 0
-        cmd.angular.z = 0
-        pub.publish(cmd)
+def stop_robot():
+    cmd.linear.x = 0
+    cmd.angular.z = 0
+    pub.publish(cmd)
     
-    if __name__ == '__main__':
-        try:
-            keyboardLoop()
-        except rospy.ROSInterruptException:
-            pass
+if __name__ == '__main__':
+    try:
+        keyboardLoop()
+    except rospy.ROSInterruptException:
+        pass
